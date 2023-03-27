@@ -6,10 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oh my food</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
-    <h1>Un super titre</h1>
+    <div class="main-container">
+        <header>
+            <a href="index.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <img src="assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+        </header>
+        <main>
+            <form method="get" action="#">
+                <div>
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <input type="search" name="city" value="Paris, Belleville">
+                    </div>
+                </div>
+            </form>
+            <section>
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+                <div>
+                    <button>Explorer nos restaurants</button>
+                </div>
+            </section>
+            <section>
+                <h2>Fonctionnement</h2>
+                <div>
+                    <span>1</span>
+                    <button><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</button>
+                </div>
+                <div>
+                    <span>2</span>
+                    <button><i class="fa-solid fa-list-ul"></i>Composez votre menu</button>
+                </div>
+                <div>
+                    <span>3</span>
+                    <button><i class="fa-solid fa-store"></i>Dégustez au restaurant</button>
+                </div>
+            </section>
+            <section>
+                <h2>Restaurants</h2>
+                <div class="restaurants">
+                    <article class="card">
+                        <div><a href="#">
+                                <img src="" alt="">
+                                <div class="description">
+                                    <div>
+                                        <span>Nouveau</span>
+                                        <h3>La palette du goût</h3>
+                                        <p>Ménilmontant</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </article>
+                    <article class="card">
+                        <div><a href="#">
+                                <img src="" alt="">
+                                <div class="description">
+                                    <div>
+                                        <span>Nouveau</span>
+                                        <h3>La note enchantée</h3>
+                                        <p>Charonne</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-thin fa-heart"></i>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </article>
+                    <article class="card">
+                        <div><a href="#">
+                                <img src="" alt="">
+                                <div class="description">
+                                    <div>
+                                        <h3>À la française</h3>
+                                        <p>Cité Rouge</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-thin fa-heart"></i>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </article>
+                    <article class="card">
+                        <div><a href="#">
+                                <img src="" alt="">
+                                <div class="description">
+                                    <div>
+                                        <h3>Le délice des sens</h3>
+                                        <p>Folie-Méricourt</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-thin fa-heart"></i>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <h4>ohmyfood</h4>
+                <div>
+                    <i class="fa-solid fa-utensils"></i>
+                    <a href="#">
+                        <p>Proposer un restaurant</p>
+                    </a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <a href="#">
+                        <p>Devenir partenaire</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <p>Mentions légales</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <p>Contact</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,13 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "SASS for project Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./assets/style.css",
+    "prefix": "postcss ./assets/style.css --use autoprefixer -d ./assets/prefixed/"
+  },
+  "author": "MadinaOdou",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
