@@ -1,0 +1,13 @@
+header h1 {
+  @include font-logo;
+  text-align: center;
+  padding: 15px 0 5px 0;
+}
+
+.header-logo {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.header-logo a {
+  text-decoration: none;
+}

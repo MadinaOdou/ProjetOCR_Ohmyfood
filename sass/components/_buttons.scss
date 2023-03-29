@@ -1,0 +1,22 @@
+.btn {
+  display: inline-block;
+  background: $color-btn;
+  color: white;
+  border-radius: 25px;
+  padding: 13px 19px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  border: none;
+}
+
+.btn-function {
+  display: inline-block;
+  width: 322.49px;
+  height: 72.38px;
+  background: $color-primary-bg;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  border: none;
+}

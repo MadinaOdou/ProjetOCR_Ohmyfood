@@ -1,0 +1,26 @@
+footer h4 {
+  @include logo-footer;
+  padding-bottom: 9px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  padding-top: 7px;
+}
+
+.flex-footer {
+  background: $color-footer;
+  color: white;
+  padding: 22px 0 33px 25px;
+  @include flex-column;
+}
+
+.flex-link {
+  @include flex-row;
+  align-items: center;
+}
+
+.flex-link i {
+  padding-right: 11px;
+}

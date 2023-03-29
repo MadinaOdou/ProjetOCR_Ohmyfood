@@ -4,10 +4,8 @@
   "description": "SASS for project Ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./assets/style.css",
-    "prefix": "postcss ./assets/style.css --use autoprefixer -d ./assets/prefixed/"
+    "sass": "sass --watch ./sass/main.scss:./assets/style.css"
   },
   "author": "MadinaOdou",
-  "license": "ISC",
-  "browserslist": "last 4 versions"
+  "license": "ISC"
 }
