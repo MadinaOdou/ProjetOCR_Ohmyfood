@@ -50,6 +50,12 @@
   margin: 0;
 }
 
+.main-container {
+  width: 100%;
+  max-width: 768px;
+  box-sizing: border-box;
+}
+
 .btn {
   display: inline-block;
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
@@ -71,6 +77,17 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   text-decoration: none;
   border: none;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  height: 174px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 
 header h1 {
@@ -119,6 +136,29 @@ footer a {
 
 .flex-link i {
   padding-right: 11px;
+}
+
+.form {
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.form input {
+  border: none;
+  background: #eaeaea;
+  height: 50px;
+  text-align: center;
+}
+
+.reservation {
+  background-color: #f7f7f7;
+  height: 287.5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=style.css.map */

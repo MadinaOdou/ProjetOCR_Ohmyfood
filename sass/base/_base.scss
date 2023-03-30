@@ -4,4 +4,11 @@
   font-family: "Shrikhand", cursive;
   font-family: "Roboto", sans-serif;
   margin: 0;
+  // border: solid 1px red;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 768px;
+  box-sizing: border-box;
 }
