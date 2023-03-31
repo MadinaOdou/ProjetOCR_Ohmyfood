@@ -6,6 +6,8 @@ header h1 {
 
 .header-logo {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
 }
 
 .header-logo a {

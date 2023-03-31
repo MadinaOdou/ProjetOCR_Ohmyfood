@@ -1,0 +1,51 @@
+.form {
+  background-color: $color-secondary-bg;
+  @include flex-row;
+  justify-content: center;
+  align-items: center;
+  input {
+    border: none;
+    background: $color-secondary-bg;
+    height: 50px;
+    text-align: center;
+    color: $color-footer;
+  }
+  i {
+    font-size: 18px;
+    color: $color-footer;
+  }
+}
+
+.reservation {
+  background-color: $color-tertiary-bg;
+  text-align: center;
+  @include flex-column;
+  justify-content: center;
+  h2 {
+    padding-top: 39.5px;
+  }
+  p {
+    padding: 18px 0 27px 0;
+  }
+  .btn {
+    margin-bottom: 57px;
+  }
+}
+
+.function {
+  @include flex-column;
+  gap: 25px;
+  padding-bottom: 68px;
+  h2 {
+    padding: 48px 0 3px 20px;
+  }
+  span {
+    border-radius: 50%;
+    background: $color-primary;
+    color: white;
+    padding: 5px 10px;
+    position: relative;
+    left: 20px;
+    bottom: 2.5px;
+  }
+}

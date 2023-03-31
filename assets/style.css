@@ -61,14 +61,17 @@
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   color: white;
   border-radius: 25px;
-  padding: 13px 19px;
+  padding: 15px 19px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   text-decoration: none;
   border: none;
 }
 
 .btn-function {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  display: inline-flex;
   width: 322.49px;
   height: 72.38px;
   background: #f6f6f6;
@@ -77,6 +80,12 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   text-decoration: none;
   border: none;
+}
+.btn-function i {
+  color: #7e7e7e;
+  font-size: 20px;
+  padding-left: 35px;
+  padding-right: 25px;
 }
 
 .card {
@@ -101,6 +110,8 @@ header h1 {
 
 .header-logo {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
 }
 
 .header-logo a {
@@ -150,15 +161,47 @@ footer a {
   background: #eaeaea;
   height: 50px;
   text-align: center;
+  color: #353535;
+}
+.form i {
+  font-size: 18px;
+  color: #353535;
 }
 
 .reservation {
   background-color: #f7f7f7;
-  height: 287.5px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+}
+.reservation h2 {
+  padding-top: 39.5px;
+}
+.reservation p {
+  padding: 18px 0 27px 0;
+}
+.reservation .btn {
+  margin-bottom: 57px;
+}
+
+.function {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-bottom: 68px;
+}
+.function h2 {
+  padding: 48px 0 3px 20px;
+}
+.function span {
+  border-radius: 50%;
+  background: #9356dc;
+  color: white;
+  padding: 5px 10px;
+  position: relative;
+  left: 20px;
+  bottom: 2.5px;
 }
 
 /*# sourceMappingURL=style.css.map */
