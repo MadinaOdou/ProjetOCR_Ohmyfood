@@ -33,19 +33,39 @@
 }
 
 .function {
-  @include flex-column;
-  gap: 25px;
   padding-bottom: 68px;
+
   h2 {
-    padding: 48px 0 3px 20px;
+    padding: 48px 0 26px 20px;
   }
+
+  &__flex {
+    @include flex-column;
+    align-items: center;
+    gap: 25px;
+  }
+
   span {
     border-radius: 50%;
     background: $color-primary;
     color: white;
     padding: 5px 10px;
     position: relative;
-    left: 20px;
+    z-index: 1;
+    left: 9px;
     bottom: 2.5px;
+  }
+}
+
+.restaurants {
+  background: $color-tertiary-bg;
+  padding: 54px 15px 66px 15px;
+  .cards {
+    @include flex-column;
+    gap: 20px;
+  }
+  h2 {
+    padding-bottom: 20px;
+    padding-left: 5px;
   }
 }

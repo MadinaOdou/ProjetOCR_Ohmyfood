@@ -1,26 +1,33 @@
-footer h4 {
-  @include logo-footer;
-  padding-bottom: 9px;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-  padding-top: 7px;
-}
-
-.flex-footer {
+.footer {
+  @include flex-column;
+  justify-content: center;
+  gap: 7px;
   background: $color-footer;
   color: white;
   padding: 22px 0 33px 25px;
-  @include flex-column;
-}
 
-.flex-link {
-  @include flex-row;
-  align-items: center;
-}
+  h4 {
+    @include logo-footer;
+    padding-bottom: 9px;
+  }
 
-.flex-link i {
-  padding-right: 11px;
+  &__icon {
+    @include flex-row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .fa-utensils {
+    font-size: 13px;
+    padding-right: 1px;
+  }
+
+  .fa-handshake-angle {
+    font-size: 11px;
+  }
 }
