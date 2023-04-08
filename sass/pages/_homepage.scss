@@ -1,71 +1,78 @@
-.form {
-  background-color: $color-secondary-bg;
-  @include flex-row;
-  justify-content: center;
-  align-items: center;
-  input {
-    border: none;
-    background: $color-secondary-bg;
-    height: 50px;
-    text-align: center;
-    color: $color-footer;
-  }
-  i {
-    font-size: 18px;
-    color: $color-footer;
-  }
-}
+body {
+  .homepage {
+    form {
+      background-color: $color-secondary-bg;
+      @include flex-row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      input {
+        border: none;
+        background: $color-secondary-bg;
+        height: 50px;
+        text-align: center;
+        color: $color-footer;
+        width: 45%;
+        padding-right: 1rem;
+      }
+      i {
+        font-size: 18px;
+        color: $color-footer;
+        padding-left: 6em;
+      }
+    }
 
-.reservation {
-  background-color: $color-tertiary-bg;
-  text-align: center;
-  @include flex-column;
-  justify-content: center;
-  h2 {
-    padding-top: 39.5px;
-  }
-  p {
-    padding: 18px 0 27px 0;
-  }
-  .btn {
-    margin-bottom: 57px;
-  }
-}
+    .reservation {
+      background-color: $color-tertiary-bg;
+      text-align: center;
+      @include flex-column;
+      justify-content: center;
+      h1 {
+        padding-top: 39.5px;
+      }
+      p {
+        padding: 18px 0 27px 0;
+      }
+      .btn {
+        margin-bottom: 57px;
+      }
+    }
 
-.function {
-  padding-bottom: 68px;
+    .function {
+      padding-bottom: 68px;
 
-  h2 {
-    padding: 48px 0 26px 20px;
-  }
+      h2 {
+        padding: 48px 0 26px 20px;
+      }
 
-  &__flex {
-    @include flex-column;
-    align-items: center;
-    gap: 25px;
-  }
+      &__flex {
+        @include flex-column;
+        align-items: center;
+        gap: 25px;
+        span {
+          border-radius: 50%;
+          background: $color-primary;
+          color: white;
+          padding: 5px 10px;
+          position: relative;
+          z-index: 1;
+          left: 9px;
+          bottom: 2.5px;
+        }
+      }
+    }
 
-  span {
-    border-radius: 50%;
-    background: $color-primary;
-    color: white;
-    padding: 5px 10px;
-    position: relative;
-    z-index: 1;
-    left: 9px;
-    bottom: 2.5px;
-  }
-}
-
-.restaurants {
-  background: $color-tertiary-bg;
-  padding: 54px 15px 66px 15px;
-  .cards {
-    @include flex-column;
-    gap: 20px;
-  }
-  h2 {
-    padding-bottom: 20px;
-    padding-left: 5px;
+    .restaurants {
+      background: $color-tertiary-bg;
+      padding: 54px 15px 66px 15px;
+      .cards {
+        @include flex-column;
+        gap: 20px;
+      }
+      h2 {
+        padding-bottom: 20px;
+        padding-left: 5px;
+      }
+    }
   }
 }

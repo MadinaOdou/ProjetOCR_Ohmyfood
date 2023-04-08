@@ -28,23 +28,39 @@
     object-position: 0px -55px;
     border-radius: 15px 15px 0 0;
   }
-}
 
-#charonne {
-  object-position: 0px -155px;
-}
+  #charonne {
+    object-position: 0px -155px;
+  }
 
-.description {
-  width: 100%;
-  padding: 16px 0 13px 13px;
-  box-sizing: border-box;
-  @include flex-row;
-  justify-content: space-between;
-  align-items: center;
-  height: 77px;
-  line-height: 1.6em;
-  i {
-    font-size: 26px;
-    padding-right: 25px;
+  .description {
+    width: 100%;
+    padding: 16px 0 13px 13px;
+    box-sizing: border-box;
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    height: 77px;
+    line-height: 1.6em;
+    .fa-heart {
+      display: inline-block;
+      position: relative;
+      font-size: 26px;
+      padding-right: 25px;
+      padding-bottom: 12px;
+    }
+    .fa-solid {
+      position: absolute;
+      right: 0px;
+      opacity: 0;
+      &:hover {
+        transform: scale(1);
+        opacity: 1;
+        background: $color-lg-heart;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 400ms ease-in-out;
+      }
+    }
   }
 }
