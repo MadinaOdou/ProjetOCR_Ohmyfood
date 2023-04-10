@@ -5,29 +5,45 @@
   background: $color-footer;
   color: white;
   padding: 22px 0 22px 25px;
+  @media (min-width: $medium) and (max-width: $extra-large) {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    padding: 64px 50px 30px 0px;
+  }
 
   h4 {
     @include logo-footer;
     padding-bottom: 9px;
+    @media (min-width: $medium) and (max-width: $extra-large) {
+      padding-left: 50px;
+    }
   }
 
-  &__icon {
-    @include flex-row;
-    align-items: center;
-    gap: 10px;
-  }
+  &-flex {
+    @media (min-width: $medium) and (max-width: $extra-large) {
+      @include flex-row;
+    }
+    &__link {
+      @include flex-row;
+      align-items: center;
+      gap: 10px;
+      @media (min-width: $medium) and (max-width: $extra-large) {
+        padding-left: 15px;
+      }
 
-  a {
-    text-decoration: none;
-    color: white;
-  }
+      a {
+        text-decoration: none;
+        color: white;
+      }
 
-  .fa-utensils {
-    font-size: 13px;
-    padding-right: 1px;
-  }
+      .fa-utensils {
+        font-size: 13px;
+        padding-right: 1px;
+      }
 
-  .fa-handshake-angle {
-    font-size: 11px;
+      .fa-handshake-angle {
+        font-size: 11px;
+      }
+    }
   }
 }

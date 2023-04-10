@@ -20,139 +20,151 @@
         <header>
             <div class="header-logo">
                 <a href="index.html">
-                    <h1>ohmyfood</h1>
+                    <p>ohmyfood</p>
                 </a>
             </div>
         </header>
         <main>
-            <form method="get" action="#">
-                <div class="form">
-                    <label for="city">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </label>
-                    <input class="font-medium" type="search" id="city" value="Paris, Belleville" size="14">
-                </div>
-            </form>
-            <section class="reservation">
-                <h2>Réservez le menu qui vous convient</h2>
-                <p class="font-paragraph">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-                <div>
-                    <button class="btn font-medium">Explorer nos restaurants</button>
-                </div>
-            </section>
-            <section class="function">
-                <h2>Fonctionnement</h2>
-                <div class="function__flex">
+            <div class="homepage">
+                <form method="get" action="#">
                     <div>
-                        <span>1</span>
-                        <button class="btn-function font-medium"><i
-                                class="fa-solid fa-mobile-screen-button"></i>Choisissez
-                            un restaurant</button>
+                        <label for="city">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </label>
+                        <input class="font-medium" type="search" id="city" value="Paris, Belleville">
                     </div>
+                </form>
+                <section class="reservation">
+                    <h1>Réservez le menu qui vous convient</h1>
+                    <p class="font-paragraph">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
                     <div>
-                        <span>2</span>
-                        <button class="btn-function font-medium"><i class="fa-solid fa-list-ul"></i>Composez votre
-                            menu</button>
+                        <button class="btn font-medium">Explorer nos restaurants</button>
                     </div>
-                    <div>
-                        <span>3</span>
-                        <button class="btn-function font-medium"><i class="fa-solid fa-store"></i>Dégustez au
-                            restaurant</button>
+                </section>
+                <section class="function">
+                    <h2>Fonctionnement</h2>
+                    <div class="function__flex">
+                        <div class="function__flex--btn">
+                            <span>1</span>
+                            <button class="btn-function font-medium"><i
+                                    class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</button>
+                        </div>
+                        <div class="function__flex--btn">
+                            <span>2</span>
+                            <button class="btn-function font-medium"><i class="fa-solid fa-list-ul"></i>Composez
+                                votre
+                                menu</button>
+                        </div>
+                        <div class="function__flex--btn">
+                            <span>3</span>
+                            <button class="btn-function font-medium"><i class="fa-solid fa-store"></i>Dégustez au
+                                restaurant</button>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section class="restaurants">
-                <h2>Restaurants</h2>
-                <div class="cards">
-                    <article class="card">
-                        <a href="#">
-                            <span>Nouveau</span>
-                            <img src="./assets/images/restaurants/menilmontant.jpg"
-                                alt="Un plat sur une table de restaurant">
-                            <div class="description">
-                                <div>
+                </section>
+                <section class="restaurants">
+                    <h2>Restaurants</h2>
+                    <div class="cards">
+                        <article class="card">
+                            <a href="#">
+                                <span>Nouveau</span>
+                                <img src="./assets/images/restaurants/menilmontant.jpg"
+                                    alt="Un plat sur une table de restaurant">
+                                <div class="description">
                                     <h3>La palette du goût</h3>
                                     <p class="font-light">Ménilmontant</p>
                                 </div>
-                                <div>
+                            </a>
+                            <div class="icon-heart">
+                                <input type="checkbox" id="one" class="heart-checkbox">
+                                <label for="one" class="heart">
                                     <i class="fa-regular fa-heart"></i>
-                                </div>
+                                    <i class="fa-solid fa-heart"></i>
+                                </label>
                             </div>
-                        </a>
-                    </article>
-                    <article class="card">
-                        <a href="#">
-                            <span>Nouveau</span>
-                            <img id="charonne" src="./assets/images/restaurants/charonne.jpg"
-                                alt="Une assiette de plat appétissant">
-                            <div class="description">
-                                <div>
+                        </article>
+                        <article class="card">
+                            <a href="#">
+                                <span>Nouveau</span>
+                                <img id="charonne" src="./assets/images/restaurants/charonne.jpg"
+                                    alt="Une assiette de plat appétissant">
+                                <div class="description">
                                     <h3>La note enchantée</h3>
                                     <p class="font-light">Charonne</p>
                                 </div>
-                                <div>
+                            </a>
+                            <div class="icon-heart">
+                                <input type="checkbox" id="two" class="heart-checkbox">
+                                <label for="two" class="heart">
                                     <i class="fa-regular fa-heart"></i>
-                                </div>
+                                    <i class="fa-solid fa-heart"></i>
+                                </label>
                             </div>
-                        </a>
-                    </article>
-                    <article class="card">
-                        <a href="#">
-                            <img src="./assets/images/restaurants/cite-rouge.jpg"
-                                alt="Dessert avec des boules de glace">
-                            <div class="description">
-                                <div>
+                        </article>
+                        <article class="card">
+                            <a href="#">
+                                <img src="./assets/images/restaurants/cite-rouge.jpg"
+                                    alt="Dessert avec des boules de glace">
+                                <div class="description">
                                     <h3>À la française</h3>
                                     <p class="font-light">Cité Rouge</p>
                                 </div>
-                                <div>
+                            </a>
+                            <div class="icon-heart">
+                                <input type="checkbox" id="three" class="heart-checkbox">
+                                <label for="three" class="heart">
                                     <i class="fa-regular fa-heart"></i>
-                                </div>
+                                    <i class="fa-solid fa-heart"></i>
+                                </label>
                             </div>
-                        </a>
-                    </article>
-                    <article class="card">
-                        <a href="#">
-                            <img src="./assets/images/restaurants/folie-mericourt.jpg"
-                                alt="Plat de poisson sur la table d'un restaurant">
-                            <div class="description">
-                                <div>
+                        </article>
+                        <article class="card">
+                            <a href="#">
+                                <img src="./assets/images/restaurants/folie-mericourt.jpg"
+                                    alt="Plat de poisson sur la table d'un restaurant">
+                                <div class="description">
                                     <h3>Le délice des sens</h3>
                                     <p class="font-light">Folie-Méricourt</p>
                                 </div>
-                                <div>
+                            </a>
+                            <div class="icon-heart">
+                                <input type="checkbox" id="four" class="heart-checkbox">
+                                <label for="four" class="heart">
                                     <i class="fa-regular fa-heart"></i>
-                                </div>
+                                    <i class="fa-solid fa-heart"></i>
+                                </label>
                             </div>
-                        </a>
-                    </article>
-                </div>
-            </section>
+                        </article>
+                    </div>
+                </section>
+            </div>
         </main>
         <footer>
             <div class="footer">
                 <h4>ohmyfood</h4>
-                <div class="footer__icon">
-                    <i class="fa-solid fa-utensils"></i>
-                    <a href="#">
-                        <p class="font-medium">Proposer un restaurant</p>
-                    </a>
-                </div>
-                <div class="footer__icon">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                    <a href="#">
-                        <p class="font-medium">Devenir partenaire</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <p>Mentions légales</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        <p>Contact</p>
-                    </a>
+                <div class="footer-flex">
+                    <div class="footer-flex__link">
+                        <i class="fa-solid fa-utensils"></i>
+                        <a href="#">
+                            <p class="font-medium">Proposer un restaurant</p>
+                        </a>
+                    </div>
+                    <div class="footer-flex__link">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <a href="#">
+                            <p class="font-medium">Devenir partenaire</p>
+                        </a>
+                    </div>
+                    <div class="footer-flex__link">
+                        <a href="#">
+                            <p>Mentions légales</p>
+                        </a>
+                    </div>
+                    <div class="footer-flex__link">
+                        <a href="mailto:madinaodou@gmail.com">
+                            <p>Contact</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>

@@ -25,9 +25,15 @@
         object-fit: cover;
         object-position: 0px -55px;
         border-radius: 15px 15px 0 0;
+        @media (min-width: $small) and (max-width: $extra-large) {
+          object-position: 0px 65%;
+        }
       }
       #charonne {
         object-position: 0px -155px;
+        @media (min-width: $small) and (max-width: $extra-large) {
+          object-position: 0px 58%;
+        }
       }
       .description {
         width: 100%;
@@ -52,7 +58,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transform: scale(0);
-        transition: transform 0.2s ease-in-out;
+        transition: transform $tr-dur ease-in-out;
       }
       .fa-regular.fa-heart {
         position: absolute;

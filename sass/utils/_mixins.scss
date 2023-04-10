@@ -33,3 +33,10 @@
   }
   color: black;
 }
+
+@mixin homepage-title {
+  font: {
+    size: 40px;
+    weight: 700;
+  }
+}
