@@ -58,7 +58,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transform: scale(0);
-        transition: transform $tr-dur ease-in-out;
+        transition: transform 400ms ease-in-out;
       }
       .fa-regular {
         position: absolute;

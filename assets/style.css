@@ -206,7 +206,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(0);
-  transition: transform 200ms ease-in-out;
+  transition: transform 400ms ease-in-out;
 }
 .cards .card .icon-heart .fa-regular {
   position: absolute;
@@ -229,6 +229,19 @@ header .header-logo {
 @media (min-width: 768px) and (max-width: 1440px) {
   header .header-logo {
     box-shadow: none;
+  }
+}
+header .header-logo .fa-arrow-left {
+  display: inline-block;
+  color: #353535;
+  font-size: 22px;
+  position: absolute;
+  left: 6%;
+  top: 35%;
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  header .header-logo .fa-arrow-left {
+    left: 2%;
   }
 }
 header .header-logo a {
@@ -489,7 +502,7 @@ body .homepage .restaurants h2 {
   }
   100% {
     opacity: 0;
-    display: none;
+    visibility: hidden;
   }
 }
 
