@@ -52,7 +52,7 @@
         bottom: 63px;
         font-size: 26px;
       }
-      .fa-solid.fa-heart {
+      .fa-solid {
         position: absolute;
         background: $color-lg-heart;
         -webkit-background-clip: text;
@@ -60,15 +60,15 @@
         transform: scale(0);
         transition: transform $tr-dur ease-in-out;
       }
-      .fa-regular.fa-heart {
+      .fa-regular {
         position: absolute;
       }
       .heart-checkbox {
         display: none;
-        &:checked + .heart .fa-regular.fa-heart {
+        &:checked + .heart .fa-regular {
           transform: scale(0);
         }
-        &:checked + .heart .fa-solid.fa-heart {
+        &:checked + .heart .fa-solid {
           transform: scale(1);
         }
       }

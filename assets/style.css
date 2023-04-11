@@ -86,12 +86,12 @@ body {
     width: 70%;
   }
 }
-@media (min-width: 768px) and (max-width: 1060px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .function__flex--btn {
     width: 50%;
   }
 }
-@media (min-width: 1060px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .function__flex--btn {
     width: 100%;
   }
@@ -122,7 +122,7 @@ body {
   position: relative;
   right: 10px;
 }
-@media (min-width: 1060px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .function__flex--btn .btn-function {
     width: 85%;
   }
@@ -137,7 +137,7 @@ body {
   padding-left: 35px;
   padding-right: 25px;
 }
-@media (min-width: 1060px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .function__flex--btn .btn-function i {
     padding-left: 30px;
     padding-right: 20px;
@@ -200,7 +200,7 @@ body {
   bottom: 63px;
   font-size: 26px;
 }
-.cards .card .icon-heart .fa-solid.fa-heart {
+.cards .card .icon-heart .fa-solid {
   position: absolute;
   background: linear-gradient(to top, #ff79da, #9356dc);
   -webkit-background-clip: text;
@@ -208,16 +208,16 @@ body {
   transform: scale(0);
   transition: transform 200ms ease-in-out;
 }
-.cards .card .icon-heart .fa-regular.fa-heart {
+.cards .card .icon-heart .fa-regular {
   position: absolute;
 }
 .cards .card .icon-heart .heart-checkbox {
   display: none;
 }
-.cards .card .icon-heart .heart-checkbox:checked + .heart .fa-regular.fa-heart {
+.cards .card .icon-heart .heart-checkbox:checked + .heart .fa-regular {
   transform: scale(0);
 }
-.cards .card .icon-heart .heart-checkbox:checked + .heart .fa-solid.fa-heart {
+.cards .card .icon-heart .heart-checkbox:checked + .heart .fa-solid {
   transform: scale(1);
 }
 
@@ -363,7 +363,7 @@ body .homepage .function {
   padding: 48px 10px 68px 10px;
   width: 100%;
 }
-@media (min-width: 1060px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   body .homepage .function {
     width: 85%;
     padding: 50px 95px;
@@ -373,7 +373,7 @@ body .homepage .function h2 {
   padding-bottom: 26px;
   padding-left: 10px;
 }
-@media (min-width: 768px) and (max-width: 1060px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   body .homepage .function h2 {
     padding-left: 95px;
   }
@@ -384,7 +384,7 @@ body .homepage .function__flex {
   align-items: center;
   gap: 25px;
 }
-@media (min-width: 1060px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   body .homepage .function__flex {
     display: flex;
     flex-direction: row;
@@ -415,7 +415,7 @@ body .homepage .restaurants .cards {
     column-gap: 50px;
   }
 }
-@media (min-width: 1060px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   body .homepage .restaurants .cards {
     row-gap: 60px;
     column-gap: 100px;
@@ -428,6 +428,68 @@ body .homepage .restaurants h2 {
 @media (min-width: 768px) and (max-width: 1440px) {
   body .homepage .restaurants h2 {
     padding-bottom: 30px;
+  }
+}
+
+.loader {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f6f6f6;
+  animation: fade-out 300ms 3s forwards;
+}
+.loader .dots-container {
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+.loader .dots-container .dots {
+  animation: bounce 1.5s infinite linear;
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  border-radius: 50%;
+  display: inline-block;
+  height: 20px;
+  text-align: center;
+  width: 20px;
+}
+.loader .dots-container .dots:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.loader .dots-container .dots:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.loader .dots-container .dots:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.loader .dots-container .dots:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.loader .dots-container .dots:nth-child(5) {
+  animation-delay: 1s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(-15px);
+  }
+  30% {
+    transform: translateY(0);
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
   }
 }
 
