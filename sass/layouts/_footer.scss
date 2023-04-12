@@ -20,6 +20,7 @@
   }
 
   &-flex {
+    line-height: 1.6em;
     @media (min-width: $medium) and (max-width: $extra-large) {
       @include flex-row;
     }

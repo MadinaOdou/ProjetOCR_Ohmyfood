@@ -5,9 +5,7 @@ $font-map: (
   regular 400 18px,
   light 300 17px,
   section 300 16px,
-  paragraph 300 18px,
-  title 500 18px,
-  subtitle 300 15px
+  paragraph 300 18px
 );
 @each $name, $font-weights, $font-sizes in $font-map {
   .font-#{$name} {
