@@ -40,21 +40,61 @@
         width: 40px;
       }
       &__item {
+        @include flex-row;
+        justify-content: space-between;
+        align-items: center;
         background: white;
         border-radius: 15px;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-        padding: 12px 15px;
+        padding-left: 15px;
+        height: 69px;
         line-height: 1.5em;
         position: relative;
-        h3 {
-          @include font-title;
+        overflow: hidden;
+        &:hover .checkmark {
+          width: 59px;
+          transition: $tr-dur;
         }
-        p {
-          @include font-subtitle;
-          span {
-            font-weight: 700;
-            position: absolute;
-            right: 13.5px;
+        &:hover span {
+          right: 75px;
+          transition: $tr-dur;
+        }
+        &--text {
+          max-width: 80%;
+          &:hover {
+            max-width: 60%;
+          }
+          h3 {
+            @include font-title;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          p {
+            @include font-subtitle;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            span {
+              font-weight: 700;
+              position: absolute;
+              right: 15px;
+            }
+          }
+        }
+        .checkmark {
+          @include flex-column;
+          justify-content: center;
+          align-items: center;
+          width: 59px;
+          height: 100%;
+          border-radius: 0 15px 15px 0;
+          background: $color-tertiary;
+          position: absolute;
+          right: 0;
+          width: 0;
+          .fa-circle-check {
+            color: white;
           }
         }
       }
