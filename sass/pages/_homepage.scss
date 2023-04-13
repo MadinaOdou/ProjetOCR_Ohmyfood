@@ -7,6 +7,7 @@ body {
       align-items: center;
       width: 100%;
       input {
+        @include font-btn;
         border: none;
         background: $color-secondary-bg;
         height: 50px;
@@ -30,11 +31,18 @@ body {
       h1 {
         padding-top: 39.5px;
         @media (min-width: $medium) and (max-width: $extra-large) {
-          @include homepage-title;
+          font-size: 40px;
           padding-top: 30px;
         }
       }
+      br {
+        @media (min-width: $medium) and (max-width: $extra-large) {
+          display: none;
+        }
+      }
       p {
+        font-size: 18px;
+        font-weight: 300;
         padding: 18px 0 27px 0;
         @media (min-width: $medium) and (max-width: $extra-large) {
           padding-top: 30px;

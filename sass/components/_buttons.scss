@@ -1,4 +1,5 @@
 .btn {
+  @include font-btn;
   display: inline-block;
   cursor: pointer;
   background: $color-lg-btn;
@@ -40,6 +41,7 @@
       }
       .btn-function {
         @include flex-row;
+        @include font-btn;
         align-items: center;
         display: inline-flex;
         cursor: pointer;

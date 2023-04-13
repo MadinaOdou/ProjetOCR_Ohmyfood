@@ -1,39 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
-.font-large {
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.font-bold {
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.font-medium {
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.font-regular {
-  font-weight: 400;
-  font-size: 18px;
-}
-
-.font-light {
-  font-weight: 300;
-  font-size: 17px;
-}
-
-.font-section {
-  font-weight: 300;
-  font-size: 16px;
-}
-
-.font-paragraph {
-  font-weight: 300;
-  font-size: 18px;
-}
-
 * {
   font-family: "Shrikhand", cursive;
   font-family: "Roboto", sans-serif;
@@ -57,6 +22,8 @@ a {
 }
 
 .btn {
+  font-size: 16px;
+  font-weight: 500;
   display: inline-block;
   cursor: pointer;
   background: linear-gradient(to top, #9356dc, #ff79da);
@@ -104,6 +71,8 @@ a {
 .function__flex--btn .btn-function {
   display: flex;
   flex-direction: row;
+  font-size: 16px;
+  font-weight: 500;
   align-items: center;
   display: inline-flex;
   cursor: pointer;
@@ -182,6 +151,10 @@ a {
   padding: 16px 0 17px 13px;
   box-sizing: border-box;
   line-height: 1.6em;
+}
+.cards .card .description p {
+  font-size: 17px;
+  font-weight: 300;
 }
 .cards .card .icon-heart .heart {
   right: 57px;
@@ -313,6 +286,9 @@ header .header-logo p {
 .footer-flex__link .fa-handshake-angle {
   font-size: 11px;
 }
+.footer-flex__link strong {
+  font-weight: 500;
+}
 
 body .homepage form {
   background-color: #eaeaea;
@@ -323,6 +299,8 @@ body .homepage form {
   width: 100%;
 }
 body .homepage form input {
+  font-size: 16px;
+  font-weight: 500;
   border: none;
   background: #eaeaea;
   height: 50px;
@@ -349,11 +327,17 @@ body .homepage .reservation h1 {
 @media (min-width: 768px) and (max-width: 1440px) {
   body .homepage .reservation h1 {
     font-size: 40px;
-    font-weight: 700;
     padding-top: 30px;
   }
 }
+@media (min-width: 768px) and (max-width: 1440px) {
+  body .homepage .reservation br {
+    display: none;
+  }
+}
 body .homepage .reservation p {
+  font-size: 18px;
+  font-weight: 300;
   padding: 18px 0 27px 0;
 }
 @media (min-width: 768px) and (max-width: 1440px) {
@@ -503,6 +487,15 @@ body .homepage .restaurants h2 {
   }
 }
 
+@keyframes cascade {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .page-menu {
   width: 100%;
 }
@@ -546,9 +539,25 @@ body .homepage .restaurants h2 {
   gap: 12px;
 }
 .page-menu .menu-list h2 {
+  font-size: 16px;
+  font-weight: 300;
   padding-bottom: 5px;
   border-bottom: solid 3px #99e2d0;
   width: 40px;
+}
+.page-menu .menu-list a {
+  opacity: 0;
+  animation: cascade 600ms forwards;
+  display: inline-block;
+}
+.page-menu .menu-list a:nth-of-type(1) {
+  animation-delay: 200ms;
+}
+.page-menu .menu-list a:nth-of-type(2) {
+  animation-delay: 400ms;
+}
+.page-menu .menu-list a:nth-of-type(3) {
+  animation-delay: 600ms;
 }
 .page-menu .menu-list__item {
   display: flex;

@@ -8,6 +8,13 @@
   flex-direction: column;
 }
 
+@mixin font-btn {
+  font: {
+    size: 16px;
+    weight: 500;
+  }
+}
+
 @mixin font-logo {
   font: {
     family: $cursive;
@@ -45,12 +52,5 @@
   font: {
     size: 15px;
     weight: 300;
-  }
-}
-
-@mixin homepage-title {
-  font: {
-    size: 40px;
-    weight: 700;
   }
 }
