@@ -521,6 +521,11 @@ body .homepage .restaurants h2 {
     object-position: 0px -360px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .page-menu #enchante {
+    object-position: 0px -700px;
+  }
+}
 .page-menu .icon-heart h1 {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
@@ -608,7 +613,7 @@ body .homepage .restaurants h2 {
 }
 .page-menu .menu-list a {
   opacity: 0;
-  animation: cascade 600ms forwards;
+  animation: cascade 800ms forwards;
   display: inline-block;
 }
 .page-menu .menu-list a:nth-of-type(1) {
@@ -619,6 +624,9 @@ body .homepage .restaurants h2 {
 }
 .page-menu .menu-list a:nth-of-type(3) {
   animation-delay: 600ms;
+}
+.page-menu .menu-list a:nth-of-type(4) {
+  animation-delay: 800ms;
 }
 .page-menu .menu-list__item {
   display: flex;

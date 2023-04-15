@@ -24,6 +24,11 @@
       object-position: 0px -360px;
     }
   }
+  #enchante {
+    @media (min-width: $large) and (max-width: $extra-large) {
+      object-position: 0px -700px;
+    }
+  }
   .icon-heart {
     h1 {
       @include menu-title;
@@ -90,7 +95,7 @@
       }
       a {
         opacity: 0;
-        animation: cascade 600ms forwards;
+        animation: cascade 800ms forwards;
         display: inline-block;
         &:nth-of-type(1) {
           animation-delay: 200ms;
@@ -100,6 +105,9 @@
         }
         &:nth-of-type(3) {
           animation-delay: 600ms;
+        }
+        &:nth-of-type(4) {
+          animation-delay: 800ms;
         }
       }
       &__item {
