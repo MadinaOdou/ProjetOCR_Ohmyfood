@@ -611,24 +611,10 @@ body .homepage .restaurants h2 {
   border-bottom: solid 3px #99e2d0;
   width: 40px;
 }
-.page-menu .menu-list a {
+.page-menu .menu-list__item {
   opacity: 0;
   animation: cascade 800ms forwards;
-  display: inline-block;
-}
-.page-menu .menu-list a:nth-of-type(1) {
-  animation-delay: 200ms;
-}
-.page-menu .menu-list a:nth-of-type(2) {
-  animation-delay: 400ms;
-}
-.page-menu .menu-list a:nth-of-type(3) {
-  animation-delay: 600ms;
-}
-.page-menu .menu-list a:nth-of-type(4) {
-  animation-delay: 800ms;
-}
-.page-menu .menu-list__item {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -641,6 +627,18 @@ body .homepage .restaurants h2 {
   line-height: 1.5em;
   position: relative;
   overflow: hidden;
+}
+.page-menu .menu-list__item:nth-of-type(1) {
+  animation-delay: 200ms;
+}
+.page-menu .menu-list__item:nth-of-type(2) {
+  animation-delay: 400ms;
+}
+.page-menu .menu-list__item:nth-of-type(3) {
+  animation-delay: 600ms;
+}
+.page-menu .menu-list__item:nth-of-type(4) {
+  animation-delay: 800ms;
 }
 .page-menu .menu-list__item:hover .checkmark {
   width: 59px;
