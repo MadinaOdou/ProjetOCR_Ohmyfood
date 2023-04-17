@@ -1,3 +1,1 @@
 OhMyFood Paris
-
-Blablabla :)
