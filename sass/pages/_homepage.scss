@@ -57,7 +57,7 @@ body {
     }
 
     .function {
-      padding: 48px 10px 68px 10px;
+      padding: 48px 0px 68px;
       width: 100%;
       @media (min-width: $large) and (max-width: $extra-large) {
         width: 85%;
@@ -66,9 +66,12 @@ body {
 
       h2 {
         padding-bottom: 26px;
-        padding-left: 10px;
+        padding-left: 20px;
         @media (min-width: $medium) and (max-width: $large) {
           padding-left: 95px;
+        }
+        @media (min-width: $large) and (max-width: $extra-large) {
+          padding-left: 10px;
         }
       }
 

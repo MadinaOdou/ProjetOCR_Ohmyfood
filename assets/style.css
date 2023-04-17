@@ -76,7 +76,7 @@ a {
   align-items: center;
   display: inline-flex;
   cursor: pointer;
-  width: 90%;
+  width: 87%;
   height: 72.38px;
   background: #f6f6f6;
   color: black;
@@ -358,7 +358,7 @@ body .homepage .reservation .btn {
   }
 }
 body .homepage .function {
-  padding: 48px 10px 68px 10px;
+  padding: 48px 0px 68px;
   width: 100%;
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
@@ -369,11 +369,16 @@ body .homepage .function {
 }
 body .homepage .function h2 {
   padding-bottom: 26px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   body .homepage .function h2 {
     padding-left: 95px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  body .homepage .function h2 {
+    padding-left: 10px;
   }
 }
 body .homepage .function__flex {
