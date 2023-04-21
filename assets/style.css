@@ -43,17 +43,17 @@ a {
 .function__flex--btn {
   width: 100%;
 }
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) {
   .function__flex--btn {
     width: 70%;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .function__flex--btn {
     width: 50%;
   }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .function__flex--btn {
     width: 100%;
   }
@@ -86,7 +86,7 @@ a {
   position: relative;
   right: 10px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .function__flex--btn .btn-function {
     width: 85%;
   }
@@ -101,7 +101,7 @@ a {
   padding-left: 35px;
   padding-right: 25px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .function__flex--btn .btn-function i {
     padding-left: 30px;
     padding-right: 20px;
@@ -133,7 +133,7 @@ a {
   object-position: 0px -55px;
   border-radius: 15px 15px 0 0;
 }
-@media (min-width: 480px) and (max-width: 1440px) {
+@media (min-width: 480px) {
   .cards .card img {
     object-position: 0px 65%;
   }
@@ -141,7 +141,7 @@ a {
 .cards .card #charonne {
   object-position: 0px -155px;
 }
-@media (min-width: 480px) and (max-width: 1440px) {
+@media (min-width: 480px) {
   .cards .card #charonne {
     object-position: 0px 58%;
   }
@@ -193,7 +193,7 @@ header .header-logo {
   position: relative;
   z-index: 1;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   header .header-logo {
     box-shadow: none;
   }
@@ -206,7 +206,7 @@ header .header-logo .fa-arrow-left {
   left: 6%;
   top: 35%;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   header .header-logo .fa-arrow-left {
     left: 2%;
   }
@@ -222,7 +222,7 @@ header .header-logo p {
   text-align: center;
   padding: 15px 0 5px 0;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   header .header-logo p {
     padding: 20px 0;
     font-size: 35px;
@@ -238,7 +238,7 @@ header .header-logo p {
   color: white;
   padding: 22px 0 22px 25px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .footer {
     flex-direction: row-reverse;
     justify-content: flex-start;
@@ -251,7 +251,7 @@ header .header-logo p {
   font-weight: 400;
   padding-bottom: 9px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .footer h4 {
     padding-left: 70px;
   }
@@ -259,7 +259,7 @@ header .header-logo p {
 .footer-flex {
   line-height: 1.6em;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .footer-flex {
     display: flex;
     flex-direction: row;
@@ -271,7 +271,7 @@ header .header-logo p {
   align-items: center;
   gap: 10px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .footer-flex__link {
     padding-left: 13px;
   }
@@ -294,7 +294,7 @@ header .header-logo p {
   font-weight: 500;
 }
 
-body .homepage form {
+body .homepage .form {
   background-color: #eaeaea;
   display: flex;
   flex-direction: row;
@@ -302,7 +302,7 @@ body .homepage form {
   align-items: center;
   width: 100%;
 }
-body .homepage form input {
+body .homepage .form input {
   font-size: 16px;
   font-weight: 500;
   border: none;
@@ -310,13 +310,11 @@ body .homepage form input {
   height: 50px;
   text-align: center;
   color: #353535;
-  width: 45%;
-  padding-right: 1rem;
+  width: 150px;
 }
-body .homepage form i {
+body .homepage .form i {
   font-size: 18px;
   color: #353535;
-  padding-left: 6em;
 }
 body .homepage .reservation {
   background-color: #f7f7f7;
@@ -328,13 +326,13 @@ body .homepage .reservation {
 body .homepage .reservation h1 {
   padding-top: 39.5px;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   body .homepage .reservation h1 {
     font-size: 40px;
     padding-top: 30px;
   }
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   body .homepage .reservation br {
     display: none;
   }
@@ -344,7 +342,7 @@ body .homepage .reservation p {
   font-weight: 300;
   padding: 18px 0 27px 0;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   body .homepage .reservation p {
     padding-top: 30px;
   }
@@ -352,7 +350,7 @@ body .homepage .reservation p {
 body .homepage .reservation .btn {
   margin-bottom: 57px;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   body .homepage .reservation .btn {
     margin-bottom: 30px;
   }
@@ -361,7 +359,7 @@ body .homepage .function {
   padding: 48px 0px 68px;
   width: 100%;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   body .homepage .function {
     width: 85%;
     padding: 50px 95px;
@@ -371,12 +369,12 @@ body .homepage .function h2 {
   padding-bottom: 26px;
   padding-left: 20px;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   body .homepage .function h2 {
     padding-left: 95px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   body .homepage .function h2 {
     padding-left: 10px;
   }
@@ -387,7 +385,7 @@ body .homepage .function__flex {
   align-items: center;
   gap: 25px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   body .homepage .function__flex {
     display: flex;
     flex-direction: row;
@@ -399,7 +397,7 @@ body .homepage .restaurants {
   background: #f7f7f7;
   padding: 54px 15px 66px 15px;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   body .homepage .restaurants {
     padding: 30px 100px;
   }
@@ -409,7 +407,7 @@ body .homepage .restaurants .cards {
   flex-direction: column;
   gap: 20px;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   body .homepage .restaurants .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -418,7 +416,7 @@ body .homepage .restaurants .cards {
     column-gap: 50px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   body .homepage .restaurants .cards {
     row-gap: 60px;
     column-gap: 100px;
@@ -428,7 +426,7 @@ body .homepage .restaurants h2 {
   padding-bottom: 20px;
   padding-left: 5px;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   body .homepage .restaurants h2 {
     padding-bottom: 30px;
   }
@@ -514,19 +512,19 @@ body .homepage .restaurants h2 {
   object-fit: cover;
   margin-bottom: -58px;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .page-menu img {
     margin-bottom: -35px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .page-menu img {
     height: 350px;
     margin-bottom: -42px;
     object-position: 0px -360px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .page-menu #enchante {
     object-position: 0px -700px;
   }
@@ -538,7 +536,7 @@ body .homepage .restaurants h2 {
   color: black;
   padding-left: 4px;
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   .page-menu .icon-heart h1 {
     padding-right: 50px;
   }
@@ -547,18 +545,18 @@ body .homepage .restaurants h2 {
   right: 65px;
   top: 38px;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .page-menu .icon-heart .heart {
     right: 30%;
   }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .page-menu .icon-heart .heart {
     top: 57px;
     right: 35%;
   }
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) {
   .page-menu .icon-heart {
     margin: 0 auto;
   }
@@ -574,12 +572,12 @@ body .homepage .restaurants h2 {
   z-index: 1;
   margin: 0 auto;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .page-menu .menu {
     width: 75%;
   }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .page-menu .menu {
     width: 70%;
     padding-top: 50px;
@@ -597,13 +595,13 @@ body .homepage .restaurants h2 {
   flex-direction: column;
   gap: 12px;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .page-menu .menu-list {
     margin: 0 auto;
     width: 70%;
   }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .page-menu .menu-list {
     margin: 0 auto;
     width: 60%;
@@ -646,11 +644,9 @@ body .homepage .restaurants h2 {
 }
 .page-menu .menu-list__item:hover .checkmark {
   width: 59px;
-  transition: all 200ms ease-in-out;
 }
 .page-menu .menu-list__item:hover span {
   right: 75px;
-  transition: all 200ms ease-in-out;
 }
 .page-menu .menu-list__item--text {
   max-width: 80%;
@@ -676,6 +672,7 @@ body .homepage .restaurants h2 {
   font-weight: 700;
   position: absolute;
   right: 15px;
+  transition: all 200ms ease-in-out;
 }
 .page-menu .menu-list__item .checkmark {
   display: flex;
@@ -689,6 +686,7 @@ body .homepage .restaurants h2 {
   position: absolute;
   right: 0;
   width: 0;
+  transition: all 200ms ease-in-out;
 }
 .page-menu .menu-list__item .checkmark .fa-circle-check {
   color: white;

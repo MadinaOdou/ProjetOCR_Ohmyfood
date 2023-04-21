@@ -15,17 +15,17 @@
     height: 275px;
     object-fit: cover;
     margin-bottom: -58px;
-    @media (min-width: $medium) and (max-width: $large) {
+    @media (min-width: $medium) {
       margin-bottom: -35px;
     }
-    @media (min-width: $large) and (max-width: $extra-large) {
+    @media (min-width: $large) {
       height: 350px;
       margin-bottom: -42px;
       object-position: 0px -360px;
     }
   }
   #enchante {
-    @media (min-width: $large) and (max-width: $extra-large) {
+    @media (min-width: $large) {
       object-position: 0px -700px;
     }
   }
@@ -33,22 +33,22 @@
     h1 {
       @include menu-title;
       padding-left: 4px;
-      @media (min-width: $medium) and (max-width: $extra-large) {
+      @media (min-width: $medium) {
         padding-right: 50px;
       }
     }
     .heart {
       right: 65px;
       top: 38px;
-      @media (min-width: $medium) and (max-width: $large) {
+      @media (min-width: $medium) {
         right: 30%;
       }
-      @media (min-width: $large) and (max-width: $extra-large) {
+      @media (min-width: $large) {
         top: 57px;
         right: 35%;
       }
     }
-    @media (min-width: $medium) and (max-width: $extra-large) {
+    @media (min-width: $medium) {
       margin: 0 auto;
     }
   }
@@ -61,10 +61,10 @@
     position: relative;
     z-index: 1;
     margin: 0 auto;
-    @media (min-width: $medium) and (max-width: $large) {
+    @media (min-width: $medium) {
       width: 75%;
     }
-    @media (min-width: $large) and (max-width: $extra-large) {
+    @media (min-width: $large) {
       width: 70%;
       padding-top: 50px;
     }
@@ -78,11 +78,11 @@
     &-list {
       @include flex-column;
       gap: 12px;
-      @media (min-width: $medium) and (max-width: $large) {
+      @media (min-width: $medium) {
         margin: 0 auto;
         width: 70%;
       }
-      @media (min-width: $large) and (max-width: $extra-large) {
+      @media (min-width: $large) {
         margin: 0 auto;
         width: 60%;
       }
@@ -121,11 +121,9 @@
         overflow: hidden;
         &:hover .checkmark {
           width: 59px;
-          transition: $tr-dur;
         }
         &:hover span {
           right: 75px;
-          transition: $tr-dur;
         }
         &--text {
           max-width: 80%;
@@ -147,6 +145,7 @@
               font-weight: 700;
               position: absolute;
               right: 15px;
+              transition: $tr-dur;
             }
           }
         }
@@ -161,6 +160,7 @@
           position: absolute;
           right: 0;
           width: 0;
+          transition: $tr-dur;
           .fa-circle-check {
             color: white;
           }

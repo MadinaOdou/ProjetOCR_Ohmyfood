@@ -1,6 +1,6 @@
 body {
   .homepage {
-    form {
+    .form {
       background-color: $color-secondary-bg;
       @include flex-row;
       justify-content: center;
@@ -13,13 +13,11 @@ body {
         height: 50px;
         text-align: center;
         color: $color-footer;
-        width: 45%;
-        padding-right: 1rem;
+        width: 150px;
       }
       i {
         font-size: 18px;
         color: $color-footer;
-        padding-left: 6em;
       }
     }
 
@@ -30,13 +28,13 @@ body {
       justify-content: center;
       h1 {
         padding-top: 39.5px;
-        @media (min-width: $medium) and (max-width: $extra-large) {
+        @media (min-width: $medium) {
           font-size: 40px;
           padding-top: 30px;
         }
       }
       br {
-        @media (min-width: $medium) and (max-width: $extra-large) {
+        @media (min-width: $medium) {
           display: none;
         }
       }
@@ -44,13 +42,13 @@ body {
         font-size: 18px;
         font-weight: 300;
         padding: 18px 0 27px 0;
-        @media (min-width: $medium) and (max-width: $extra-large) {
+        @media (min-width: $medium) {
           padding-top: 30px;
         }
       }
       .btn {
         margin-bottom: 57px;
-        @media (min-width: $medium) and (max-width: $extra-large) {
+        @media (min-width: $medium) {
           margin-bottom: 30px;
         }
       }
@@ -59,7 +57,7 @@ body {
     .function {
       padding: 48px 0px 68px;
       width: 100%;
-      @media (min-width: $large) and (max-width: $extra-large) {
+      @media (min-width: $large) {
         width: 85%;
         padding: 50px 95px;
       }
@@ -67,10 +65,10 @@ body {
       h2 {
         padding-bottom: 26px;
         padding-left: 20px;
-        @media (min-width: $medium) and (max-width: $large) {
+        @media (min-width: $medium) {
           padding-left: 95px;
         }
-        @media (min-width: $large) and (max-width: $extra-large) {
+        @media (min-width: $large) {
           padding-left: 10px;
         }
       }
@@ -79,7 +77,7 @@ body {
         @include flex-column;
         align-items: center;
         gap: 25px;
-        @media (min-width: $large) and (max-width: $extra-large) {
+        @media (min-width: $large) {
           @include flex-row;
           justify-content: center;
           gap: 0px;
@@ -90,20 +88,20 @@ body {
     .restaurants {
       background: $color-tertiary-bg;
       padding: 54px 15px 66px 15px;
-      @media (min-width: $medium) and (max-width: $extra-large) {
+      @media (min-width: $medium) {
         padding: 30px 100px;
       }
       .cards {
         @include flex-column;
         gap: 20px;
-        @media (min-width: $medium) and (max-width: $extra-large) {
+        @media (min-width: $medium) {
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr;
           row-gap: 30px;
           column-gap: 50px;
         }
-        @media (min-width: $large) and (max-width: $extra-large) {
+        @media (min-width: $large) {
           row-gap: 60px;
           column-gap: 100px;
         }
@@ -111,7 +109,7 @@ body {
       h2 {
         padding-bottom: 20px;
         padding-left: 5px;
-        @media (min-width: $medium) and (max-width: $extra-large) {
+        @media (min-width: $medium) {
           padding-bottom: 30px;
         }
       }

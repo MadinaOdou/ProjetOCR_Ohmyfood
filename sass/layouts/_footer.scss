@@ -5,7 +5,7 @@
   background: $color-footer;
   color: white;
   padding: 22px 0 22px 25px;
-  @media (min-width: $large) and (max-width: $extra-large) {
+  @media (min-width: $large) {
     flex-direction: row-reverse;
     justify-content: flex-start;
     padding: 57px 65px 30px 0px;
@@ -14,21 +14,21 @@
   h4 {
     @include logo-footer;
     padding-bottom: 9px;
-    @media (min-width: $large) and (max-width: $extra-large) {
+    @media (min-width: $large) {
       padding-left: 70px;
     }
   }
 
   &-flex {
     line-height: 1.6em;
-    @media (min-width: $large) and (max-width: $extra-large) {
+    @media (min-width: $large) {
       @include flex-row;
     }
     &__link {
       @include flex-row;
       align-items: center;
       gap: 10px;
-      @media (min-width: $large) and (max-width: $extra-large) {
+      @media (min-width: $large) {
         padding-left: 13px;
         &:nth-of-type(3) {
           padding-left: 40px;
