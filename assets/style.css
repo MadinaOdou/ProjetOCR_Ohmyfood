@@ -91,10 +91,6 @@ a {
     width: 85%;
   }
 }
-.function__flex--btn .btn-function:hover i {
-  color: #9356dc;
-  transition: all 200ms ease-in-out;
-}
 .function__flex--btn .btn-function i {
   color: #7e7e7e;
   font-size: 20px;
@@ -106,6 +102,9 @@ a {
     padding-left: 30px;
     padding-right: 20px;
   }
+}
+.function__flex--btn .btn-function .fa-store {
+  color: #9356dc;
 }
 
 .cards .card {
@@ -650,6 +649,11 @@ body .homepage .restaurants h2 {
 }
 .page-menu .menu-list__item--text {
   max-width: 80%;
+}
+@media (max-width: 480px) {
+  .page-menu .menu-list__item--text {
+    max-width: 70%;
+  }
 }
 .page-menu .menu-list__item--text:hover {
   max-width: 60%;
