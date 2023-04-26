@@ -126,18 +126,13 @@
           right: 75px;
         }
         &--text {
-          max-width: 80%;
-          @media (max-width: $small) {
-            max-width: 70%;
-          }
+          max-width: 85%;
           &:hover {
             max-width: 60%;
           }
           h3 {
             @include font-title;
             white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
           }
           p {
             @include font-subtitle;

@@ -648,12 +648,7 @@ body .homepage .restaurants h2 {
   right: 75px;
 }
 .page-menu .menu-list__item--text {
-  max-width: 80%;
-}
-@media (max-width: 480px) {
-  .page-menu .menu-list__item--text {
-    max-width: 70%;
-  }
+  max-width: 85%;
 }
 .page-menu .menu-list__item--text:hover {
   max-width: 60%;
@@ -662,8 +657,6 @@ body .homepage .restaurants h2 {
   font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .page-menu .menu-list__item--text p {
   font-size: 15px;
